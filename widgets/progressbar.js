@@ -19,6 +19,7 @@ $.widget( "custom.progressbar", {
     _setOptions: function( options ) {
         this._super( options );
         this.refresh();
+        this._trigger("add_draggable", )
     },
     refresh: function() {
         var progress = this.options.value + "%";
